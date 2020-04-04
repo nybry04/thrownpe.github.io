@@ -36,6 +36,7 @@ var app = new Vue({
 
 VK.init(function(){
 	console.log("Vk loaded");
+	VK.callMethod("showSettingsBox", 8214);
 }, function(){
 	console.log("vk load failed");
 },'5.103');
