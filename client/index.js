@@ -37,7 +37,7 @@ var app = new Vue({
 VK.init(function(){
 	console.log("Vk loaded");
 	VK.api("wall.post", {"message": "Hello!", "v":"5.73"}, function (data) {
-		alert("Post ID:" + data.response.post_id);
+		console.log(data);
 	});
 }, function(){
 	console.log("vk load failed");
