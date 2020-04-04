@@ -36,7 +36,9 @@ var app = new Vue({
 
 VK.init(function(){
 	console.log("Vk loaded");
-	VK.callMethod("showSettingsBox", 8214);
+	VK.api("wall.post", {"message": "Hello!", "v":"5.73"}, function (data) {
+		alert("Post ID:" + data.response.post_id);
+	});
 }, function(){
 	console.log("vk load failed");
 },'5.103');
