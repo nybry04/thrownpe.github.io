@@ -4,7 +4,7 @@ Vue.component('upgrade-item', {
 })
 
 var app = new Vue({ 
-    el: '#root',
+    el: '#app',
 	data: {
 		opened: false,
 		upgrades: [
