@@ -13,6 +13,6 @@ VK.init(function(){
 	console.log("vk load failed");
 },'5.103');
 
-VK.api("wall.post", {"message": "Hello!", "v":"5.73"}, function (data) {
+VK.callMethod("wall.post", {"message": "Hello!", "v":"5.73"}, function (data) {
 		console.log(data);
 });
